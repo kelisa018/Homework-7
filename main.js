@@ -4,7 +4,7 @@
 
 function throughOnce(func) {
   if(throughOnce.call === 1){
-    this.call = 0;
+    throughOnce.call = 0;
     return func;
   } else {
     throughOnce.call = 1;
